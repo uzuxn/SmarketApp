@@ -11,7 +11,7 @@ Includes inventory tracking, user authentication, and basic sales reporting.
 
 ## 🧰 Tech Stack
 - C# (.NET Framework / WinForms)
-- SQL Server (if database included)
+- SQL Server 
 - Visual Studio
 
 ## 📂 Folder Structure
