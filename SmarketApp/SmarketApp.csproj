@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{515A0789-B633-4E91-BEF6-1BE7899F53B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SmarketApp</RootNamespace>
+    <AssemblyName>SmarketApp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addsamplefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addsamplefrm.Designer.cs">
+      <DependentUpon>Addsamplefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Homefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homefrm.Designer.cs">
+      <DependentUpon>Homefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loginfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginfrm.Designer.cs">
+      <DependentUpon>Loginfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainClass.cs" />
+    <Compile Include="Mainfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainfrm.Designer.cs">
+      <DependentUpon>Mainfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AddCategoryfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\AddCategoryfrm.Designer.cs">
+      <DependentUpon>AddCategoryfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AddOrderfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\AddOrderfrm.Designer.cs">
+      <DependentUpon>AddOrderfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AddProductfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\AddProductfrm.Designer.cs">
+      <DependentUpon>AddProductfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AddStafffrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\AddStafffrm.Designer.cs">
+      <DependentUpon>AddStafffrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\POSfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\POSfrm.Designer.cs">
+      <DependentUpon>POSfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Viewsamplefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewsamplefrm.Designer.cs">
+      <DependentUpon>Viewsamplefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewCategoryfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ViewCategoryfrm.Designer.cs">
+      <DependentUpon>ViewCategoryfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Vieworederfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Vieworederfrm.Designer.cs">
+      <DependentUpon>Vieworederfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewProductfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ViewProductfrm.Designer.cs">
+      <DependentUpon>ViewProductfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewStafffrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ViewStafffrm.Designer.cs">
+      <DependentUpon>ViewStafffrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addsamplefrm.resx">
+      <DependentUpon>Addsamplefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homefrm.resx">
+      <DependentUpon>Homefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginfrm.resx">
+      <DependentUpon>Loginfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainfrm.resx">
+      <DependentUpon>Mainfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\AddCategoryfrm.resx">
+      <DependentUpon>AddCategoryfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\AddOrderfrm.resx">
+      <DependentUpon>AddOrderfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\AddProductfrm.resx">
+      <DependentUpon>AddProductfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\AddStafffrm.resx">
+      <DependentUpon>AddStafffrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\POSfrm.resx">
+      <DependentUpon>POSfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewsamplefrm.resx">
+      <DependentUpon>Viewsamplefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ViewCategoryfrm.resx">
+      <DependentUpon>ViewCategoryfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Vieworederfrm.resx">
+      <DependentUpon>Vieworederfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ViewProductfrm.resx">
+      <DependentUpon>ViewProductfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ViewStafffrm.resx">
+      <DependentUpon>ViewStafffrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Resources\add icon.png" />
+    <None Include="Resources\add icon1.png" />
+    <Content Include="Resources\Add order icon.png" />
+    <Content Include="Resources\AddImage icon.png" />
+    <Content Include="Resources\AddItem icon.png" />
+    <Content Include="Resources\Addproduct icon.png" />
+    <Content Include="Resources\category_icon-removebg-preview.png" />
+    <Content Include="Resources\close-icon-30.png" />
+    <Content Include="Resources\delete icon.png" />
+    <Content Include="Resources\home icon.png" />
+    <Content Include="Resources\home_icon-removebg-preview.png" />
+    <Content Include="Resources\image-removebg-preview.png" />
+    <Content Include="Resources\maximize-window--v2-transformed-removebg-preview.png" />
+    <Content Include="Resources\minimize-removebg-preview.png" />
+    <Content Include="Resources\Staff icon new.png" />
+    <Content Include="Resources\Staff icon.png" />
+    <Content Include="Resources\UM.logo-removebg-preview.png" />
+    <Content Include="Resources\UM.logo.png" />
+    <Content Include="Resources\User_icon-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
